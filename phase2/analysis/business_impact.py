@@ -1,0 +1,5 @@
+def heuristic_impact(article):
+    text=(article.headline+" "+article.content).lower(); risks=[]
+    if any(x in text for x in ("proposed", "plans to", "expects")): risks.append("Announcement may be a plan rather than a completed event.")
+    if any(x in text for x in ("capex", "debt", "borrowing", "investment")): risks.append("Capital allocation, funding and execution should be verified.")
+    return {"what_happened": article.summary or article.headline, "why_it_matters": "The development may affect operations, revenue, capital needs or competitive position.", "business_impact": "Potential impact requires company-specific evidence and execution details.", "affected_operations": [c.value for c in article.categories], "revenue_effect":"Unknown", "profitability_effect":"Unknown", "capital_or_debt_effect":"Potentially relevant" if risks else "Unknown", "competitive_effect":"Unknown", "time_horizon":"Short- to long-term depending on execution", "evidence":[str(article.url)], "uncertainties":risks or ["Accessible evidence is limited."], "reliability":"medium", "sentiment":"mixed", "confidence":0.45}

@@ -1,0 +1,113 @@
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# ==============================
+# Virtual Environments
+# ==============================
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# ==============================
+# Environment Variables / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets/
+*.pem
+*.key
+
+# ==============================
+# IDEs and Editors
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+log/
+
+# ==============================
+# Testing / Coverage
+# ==============================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ==============================
+# Streamlit
+# ==============================
+.streamlit/secrets.toml
+
+# ==============================
+# Databases
+# ==============================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==============================
+# Scraping / Browser Cache
+# ==============================
+.playwright/
+browser_data/
+crawl_cache/
+.cache/
+tmp/
+temp/
+
+# ==============================
+# Generated Reports and Data
+# ==============================
+reports/generated/
+storage/generated/
+output/
+outputs/
+
+# ==============================
+# Model Files
+# ==============================
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.gguf
+models/downloads/
+
+# ==============================
+# OS Files
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
